@@ -1,0 +1,7 @@
+.main .orange {
+    color: red;
+ }
+ .orange ~ li {
+    color: green;
+ }
+ 
