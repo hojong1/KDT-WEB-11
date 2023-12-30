@@ -1,0 +1,21 @@
+.orange {
+    width: auto;
+    height: 200px;
+    background-color: orange;
+}
+span {
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    margin-right: 30px;
+}
+.skyblue {
+    background-color: skyblue;
+    
+}
+.green {
+    background-color: green;
+}
+.red {
+    background-color: red;
+}

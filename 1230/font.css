@@ -1,0 +1,17 @@
+/* 눈누 폰트는 웹폰트 가져오기 방식으로 폰트 가져옴 */
+/* 구글 폰트는 link 방식으로 폰트를 가져옴 */
+@font-face {
+    font-family: 'seolleimcool-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: 'seolleimcool-SemiBold';
+}
+.content1 {
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+}
