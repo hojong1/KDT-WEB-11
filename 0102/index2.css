@@ -1,0 +1,15 @@
+.box{
+    background-color: aquamarine;
+    width: 300px;
+    height: 300px;
+    /* border : 단축 속성 * /
+    border: 2px solid #ff0000; */
+    border-color: red;
+    border-style: solid;
+    border-width: 3px;
+    /* border-radius : 모서리 변경 */
+    /* border-radius: 0 50px 0 0; */
+    /* border-radius: 50%; 원 만들기 */
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}

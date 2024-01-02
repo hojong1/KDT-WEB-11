@@ -1,0 +1,9 @@
+div {
+    background-color: skyblue;
+    width: 200px;
+    height: 200px;
+}
+div:hover {
+    /* display: none; */
+    opacity: 0;
+}
