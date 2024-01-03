@@ -1,0 +1,78 @@
+*{
+    font-weight: bold;
+}
+.main{
+    width: 100%;
+    height: 100vh;    
+}
+p {
+    text-align: center;
+}
+.header {
+    background-color: gray;
+    height: 30px;
+    display: flex;
+}
+.header4 {
+    height: 20px;
+    background-color: pink;
+    color: white;
+    text-align: center;
+}
+.menu {
+    margin-right: 50px;
+    display: inline-block;
+}
+.header1 {
+    position: relative;
+}
+.header1 > .menubox {
+    right: 0px;
+}
+.header1 > .head1 {
+    position: absolute;
+}
+.header1 > .logo {
+    left: 20px;
+}
+.item {
+    margin-top: 5px;
+    width: 20px;
+    height: 15px;
+}
+.header2 {
+    justify-content: space-between;
+}
+.header2> .menu1 {
+    margin-left: 20px;
+}
+.header2> .menu3 {
+    margin-right: 50px;
+}
+.header3 {
+    justify-content: space-between;
+}
+.header3 > .logo {
+    margin-left: 20px;
+}
+.header3 > .login {
+    margin-right: 50px;
+}
+.header5 {
+    position: relative;
+}
+.head5 {
+    position: absolute;
+}
+.header5 > .logo {
+    left: 20px;
+}
+.header5 > .signup {
+    right: 50px;
+}
+.header5 > .login {
+    right: 120px;
+}
+.header5 > .menubox {
+    left: 80px;
+}

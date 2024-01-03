@@ -1,0 +1,102 @@
+*{
+    font-weight: bold;
+}
+.main{
+    width: 100%;
+    height: 100vh;    
+}
+p {
+    text-align: center;
+}
+.header1 {
+    background-color: gray;
+    display: flex;
+    height: 30px;
+    position: relative;
+}
+.head1 {
+    position: absolute;
+    height: 15px;
+    width: 20px;
+    top: 5px;
+}
+.header1 > .logo {
+    left: 20px;
+}
+.header1 >.menu1 {
+    right: 200px;
+} 
+.header1 >.menu2 {
+    right: 130px;
+} 
+.header1 >.menu3 {
+    right: 60px;
+} 
+.header2 {
+    background-color: gray;
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+}
+.head2 {
+    height: 15px;
+    width: 20px;
+    margin-top: 5px;
+}
+.header2> .menu1 {
+    margin-left: 20px;
+}
+.header2> .menu3 {
+    margin-right: 60px;
+}
+.header3 {
+    background-color: gray;
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+   
+}
+.header3 > .logo {
+    margin-left: 20px;
+}
+.header3 > .login {
+    margin-right: 60px;
+}
+.menu > .menu3 {
+    margin-left: 50px;
+}
+.menu > .menu1 {
+    margin-right: 50px;
+}
+.header4 {
+    background-color: pink;
+    color: white;
+    text-align: center;
+}
+.header5 {
+    background-color: gray;
+    height: 30px;
+    display: flex;
+    position: relative;
+}
+.head5 {
+    height: 15px;
+    width: 20px;
+    margin-top: 5px;
+    position: absolute;
+}
+.header5 > .logo {
+    left:20px;
+}
+.header5 > .signup {
+    right: 60px;
+}
+.header5 > .login {
+    right: 130px;
+}
+.header5 > .menu {
+    
+}

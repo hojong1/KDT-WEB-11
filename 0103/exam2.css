@@ -1,0 +1,46 @@
+.main{
+    position: relative;
+}
+.circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.circle1{
+    background-color: blue;
+    position: relative;   
+}
+.circle2{
+    background-color: white;
+    width: 34px;
+    height: 34px;
+    top: 20px;
+    left: 20px;
+}
+.circle3{
+    background-color: black;
+    width: 17px;
+    height: 17px;
+    top: 6px;
+}
+.circle4{
+    background-color: red;
+    left: 70px;
+    top: 50px;
+}
+.circle5{
+    background-color: darkblue;
+    left: 120px;
+    top: 100px;
+}
+.circle6 {
+    background-color: darkgrey;
+    left: 170px;
+    top: 100px;
+}
+.circle7{
+    background-color: darkcyan;
+    left: 220px;
+    top: 100px;
+}

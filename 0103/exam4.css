@@ -1,0 +1,43 @@
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: bisque;
+    display: flex;
+    /* flex-wrap: wrap; 두줄 */
+    /* flex-direction: column;  한줄 수직 정렬 */
+    /* flex-direction: row;  한줄 가로 정렬*/
+    /* flex-wrap: wrap;
+    justify-content: flex-start;  두줄 가로 정렬
+    align-content: flex-start; */
+    /* flex-wrap: wrap;
+    flex-direction: column;       두줄 세로 정렬
+    align-content: flex-start; */
+} 
+.item {
+    width: 100px;
+    height: 100px;
+}
+.item1 {
+    background-color: red;
+}
+.item2 {
+    background-color: orange;
+}
+.item3 {
+    background-color: yellow;
+}
+.item4 {
+    background-color: green;
+}
+.item5 {
+    background-color: blue;
+}
+.item6 {
+    background-color: darkblue;
+}
+.item7 {
+    background-color: purple;
+}
+.item8 {
+    background-color: black;
+}
