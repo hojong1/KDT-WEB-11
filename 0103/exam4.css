@@ -3,10 +3,12 @@
     height: 500px;
     background-color: bisque;
     display: flex;
-    /* flex-wrap: wrap; 두줄 */
+    flex-wrap: wrap; 
+    align-content: center;
+    flex-direction: column;
     /* flex-direction: column;  한줄 수직 정렬 */
     /* flex-direction: row;  한줄 가로 정렬*/
-    /* flex-wrap: wrap;
+    /* flex-wrap: wrap; 두 줄
     justify-content: flex-start;  두줄 가로 정렬
     align-content: flex-start; */
     /* flex-wrap: wrap;

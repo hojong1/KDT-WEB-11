@@ -1,0 +1,45 @@
+.box {
+    display: flex;
+    position: relative;
+}
+/* img { 강의 
+    width: 300px;
+    height: 200px;
+    transform: skewY(30deg);
+    align-content: center;
+    display: flex;
+    
+} */
+img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+/* .img1 {
+    z-index: 3;
+}
+.img2 {
+    z-index: 2;
+    position: relative;
+    right: 150px;
+}
+.img3 {
+    z-index: 1;
+    right: 300px;
+    position: relative;
+} */
+.img1 {
+    top:200px;
+    left:100px;
+    z-index: 3;
+}
+.img2 {
+    top: 180px;
+    left: 350px;
+    z-index: 2;
+}
+.img3 {
+    top: 150px;
+    left: 600px;
+    z-index: 1;
+}

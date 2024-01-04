@@ -2,7 +2,6 @@
     width: 500px;
     height: 500px;
     position: relative;
-    background-color: bisque;
 }
 .item {
     position: absolute;
@@ -11,6 +10,7 @@
 }
 .item1 {
     background-color: red;
+    /* z-index: 1; */
     z-index: 4;
 } 
 .item2 {

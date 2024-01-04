@@ -1,0 +1,18 @@
+h1 {
+    font-weight: bold;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    overflow-y:scroll ;
+}
+.box:hover {
+    transform: translate(100px, 100px);
+    width: 300px;
+    height: 300px;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    transition-timing-function:ease-in;
+}
