@@ -24,16 +24,11 @@ p {
     display: inline-block;
 }
 .header1 {
-    position: relative;
+    justify-content: space-between;
+    /* position: relative; */
 }
-.header1 > .menubox {
-    right: 0px;
-}
-.header1 > .head1 {
-    position: absolute;
-}
-.header1 > .logo {
-    left: 20px;
+.header > .logo {
+    margin-left: 20px;
 }
 .item {
     margin-top: 5px;
@@ -58,7 +53,27 @@ p {
 .header3 > .login {
     margin-right: 50px;
 }
+.left {
+    display: flex;
+    margin-right: 50px;
+}
+.right {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.right > .login {
+    margin-right: 50px;
+}
 .header5 {
+    justify-content: space-between;
+}
+.left > .logo {
+    margin-right :50px;
+    margin-left: 20px;
+}
+
+/* .header5 {
     position: relative;
 }
 .head5 {
@@ -75,4 +90,13 @@ p {
 }
 .header5 > .menubox {
     left: 80px;
+} */
+/* .header1 > .menubox {
+    right: 0px;
 }
+.header1 > .head1 {
+    position: absolute;
+}
+.header1 > .logo {
+    left: 20px;
+} */
