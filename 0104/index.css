@@ -7,7 +7,7 @@ img {
     width: 300px;
     height: 300px;
     transform: translate(100px, 100px);
-    transform: scale(2);
+    /* transform: scale(2); */
 }
 /*  translate : 이동 
     transform: translate(100px, 100px);
