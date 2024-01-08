@@ -1,4 +1,4 @@
-//실습 4 
+//실습 4
 
 // let age = Number(prompt('나이를 입력하세요'));
 
@@ -14,7 +14,7 @@
 //     }
 
 //실습 5
-    
+
 // let age = Number(prompt('나이를 입력하세요'));
 // let gender = prompt('성별을 입력하세요 (남자/여자로 입력)');
 
@@ -40,7 +40,7 @@
 //         console.log('유아 남자입니다.');
 //     }else {console.log('유아 여자입니다');} }
 
-// 함수를 이용한 실습 5 
+// 함수를 이용한 실습 5
 
 // let age = Number(prompt('나이를 입력하세요'));
 // let gender = prompt('성별을 입력하세요 (남자/여자로 입력)');
@@ -62,9 +62,9 @@
 //         console.log(`중학생 ${gender}`);
 //     }else if (age >= 8) {
 //         console.log(`초등학생 ${gender}`);
-//     }else if (age >= 0) { 
+//     }else if (age >= 0) {
 //         console.log(`유아 ${gender}`);
-//     } else { 
+//     } else {
 //         console.log('나이가 틀렸습니다.');
 //     }
 // }
@@ -80,14 +80,14 @@
 
 // let num = Number(prompt("숫자를 입력하세요:"));
 
-// // num = 10000이면 1번 
-// for (let i= 1; i <= num; i++){ 
+// // num = 10000이면 1번
+// for (let i= 1; i <= num; i++){
 //     if(i % 13 == 0 && i % 2 == 1){
 //         console.log(i)
 //     }
 // }
 
-//실습 8 
+//실습 8
 
 // for (let i = 2; i < 10; i++) {
 //         console.log(`---${i} 단---`)
@@ -96,14 +96,14 @@
 //     }
 // }
 
-// 실습 9 
+// 실습 9
 
 let n = 1;
 let sum = 0;
 while (n < 100) {
     if (n % 2 == 0 || n % 3 == 0) {
-    sum += n;
+        sum += n;
     }
-    n++
+    n++;
 }
-console.log(sum)
+console.log(sum);
