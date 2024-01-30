@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //실습 1
+            // function call(name, cb) {
+            //     setTimeout(function () {
+            //         console.log(name);
+            //         cb(name);
+            //     }, 1000);
+            // }
+            // function back(cb) {
+            //     setTimeout(function () {
+            //         console.log('back');
+            //         cb('back');
+            //     }, 1000);
+            // }
+            // function hell(cb) {
+            //     setTimeout(function () {
+            //         cb('callback hell');
+            //     }, 1000);
+            // }
+            // call('Kim', function (name) {
+            //     console.log(name + '반가워');
+            //     back(function (txt) {
+            //         console.log(txt + '을 실행했구나');
+            //         hell(function (message) {
+            //             console.log('여기는 ' + message);
+            //         });
+            //     });
+            // });
+            function call(name) {
+                return new Promise(function (resolve, reject) {
+                    setTimeout(function () {
+                        console.log(name);
+                        resolve(name);
+                    }, 1000);
+                });
+            }
+            function back(str) {
+                return new Promise(function (resolve, reject) {
+                    setTimeout(function () {
+                        console.log('back');
+                        resolve(str);
+                    }, 1000);
+                });
+            }
+            function hell(str2) {
+                return new Promise(function (resolve, reject) {
+                    setTimeout(function () {
+                        resolve(str2);
+                    }, 1000);
+                });
+            }
+            // call('Kim')
+            //     .then((res) => {
+            //         console.log(res + ' 반가워');
+            //         return back('back');
+            //     })
+            //     .then((txt) => {
+            //         console.log(txt + '을 실행했구나');
+            //         return hell('callback hell');
+            //     })
+            //     .then((message) => {
+            //         console.log('여기는 ' + message);
+            //     });
+
+            //실습 2
+            async function exec() {
+                let name = await call('Kim');
+                console.log(name + ' 반가워');
+                let txt = await back('back');
+                console.log(txt + '을 실행 했구나');
+                let message = await hell('callback hell');
+                console.log('여기는 ' + message);
+            }
+            exec();
+        </script>
+    </body>
+</html>

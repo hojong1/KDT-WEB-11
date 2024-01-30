@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //상속
+            class House {
+                constructor(str) {
+                    this.str = str;
+                }
+                door() {
+                    console.log('문을 열고 닫습니다.');
+                }
+                window() {
+                    console.log('창문을 열고 닫습니다.');
+                }
+            }
+
+            const ho1 = new House();
+            ho1.door();
+
+            class Apartment extends House {
+                //super() : 자식클래스에서 생성자를 정의할 때, super키워드 사용하여
+                // 부모 클래스의 생성자를 호출
+                constructor(str, floor) {
+                    super(str);
+                    this.floor = floor;
+                }
+                elevator() {
+                    console.log('승강기를 타고 내립니다');
+                }
+                //메서드 오버라이딩 : 자식 클래스에서 부모 클래스의 메서드를
+                //재정의 할때 사용하는 용어 super키워드를 사용하여 부모 클래스의 메서드에 접근
+                window() {
+                    super.window();
+                    console.log('창문을 슬라이딩합니다.');
+                }
+            }
+
+            const apart = new Apartment('자이', 10);
+            apart.window();
+            apart.elevator();
+        </script>
+    </body>
+</html>

@@ -8,12 +8,80 @@
     <body>
         <script>
             // callback hell
-            setTimeout(function () {
-                document.body.style.backgroundColor = 'red';
-                setTimeout(function () {
-                    document.body.style.backgroundColor = 'orange';
-                }, 2000);
-            }, 2000);
+            // setTimeout(function () {
+            //     document.body.style.backgroundColor = 'red';
+            //     setTimeout(function () {
+            //         document.body.style.backgroundColor = 'orange';
+            //         setTimeout(function () {
+            //             document.body.style.backgroundColor = 'yellow';
+            //             setTimeout(function () {
+            //                 document.body.style.backgroundColor = 'green';
+            //                 setTimeout(function () {
+            //                     document.body.style.backgroundColor = 'blue';
+            //                 }, 1000);
+            //             }, 1000);
+            //         }, 1000);
+            //     }, 1000);
+            // }, 1000);
+            // 실습 3
+            // let colors = ['red', 'orange', 'yellow', 'green', 'blue'];
+            // console.log(colors);
+            // function color() {
+            //     return new Promise(function (resolve, reject) {
+            //         resolve(function () {
+            //             for (i = 0; i < colors.length; i++) {
+            //                 setTimeout(function () {
+            //                     document.body.style.backgroundColor = colors[i];
+            //                 }, 1000);
+            //             }
+            //         });
+            //     });
+            // }
+            // async function exec() {
+            //     await color();
+            // }
+            // exec();
+            // let colors = ['red', 'orange', 'yellow', 'green', 'blue'];
+            // for (i = 0; i < colors.length; i++) {
+            //     setTimeout(() => {
+            //         document.body.style.backgroundColor = colors[i];
+            //     }, 1000);
+            // }
+
+            // 실습 3
+            /*
+            function changeBgColor(newColor) {
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        document.body.style.backgroundColor = newColor;
+                        resolve();
+                    }, 1000);
+                });
+            }
+            // changeBgColor('red')
+            //     .then(() => {
+            //         return changeBgColor('orange');
+            //     })
+            //     .then(() => {
+            //         return changeBgColor('yellow');
+            //     })
+            //     .then(() => {
+            //         return changeBgColor('green');
+            //     })
+            //     .then(() => {
+            //         return changeBgColor('blue');
+            //     });
+
+            async function exec() {
+                await changeBgColor('red', 1000);
+                await changeBgColor('orange', 1000);
+                await changeBgColor('yellow', 1000);
+                await changeBgColor('green', 1000);
+                await changeBgColor('blue', 1000);
+            }
+            exec();
+            
+            */
         </script>
     </body>
 </html>
