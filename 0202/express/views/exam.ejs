@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <form name="exam-form">
+            <div>이름 <input type="text" placeholder="" name="username" required /></div>
+            <fieldset>
+                <legend>성별</legend>
+
+                <input type="radio" name="gender" value="남자" /> 남자
+
+                <input type="radio" name="gender" value="여자" /> 여자
+            </fieldset>
+            <fieldset>
+                <legend>생년월일</legend>
+                <select name="year">
+                    <% for(let i=1990; i<=2024; i++){ %>
+                    <option value="<%= i %>"><%= i%></option>
+                    <% } %>
+                </select>
+                년
+                <select name="month">
+                    <% for(let i=1; i<=12; i++){ %>
+                    <option value="<%= i %>"><%= i%></option>
+                    <% } %>
+                </select>
+                월
+                <select name="day">
+                    <% for(let i=1; i<=31; i++){ %>
+                    <option value="<%= i %>"><%= i%></option>
+                    <% } %>
+                </select>
+                일
+            </fieldset>
+            <fieldset>
+                <legend>관심사</legend>
+                <input type="checkbox" value="여행" name="hobby" /> 여행
+                <input type="checkbox" value="패션" name="hobby" /> 패션
+                <input type="checkbox" value="음식" name="hobby" /> 음식
+            </fieldset>
+            <br />
+            <button type="button" onclick="axiosGet()">회원가입</button>
+        </form>
+        <div class="result"></div>
+
+        <script>
+            const resultBox = document.querySelector('.result');
+            function axiosGet() {
+                const form = document.forms['exam-form'];
+                const hobby = [];
+                const checked = form.querySelectorAll('input[type="checkbox"]:checked');
+                checked.forEach((elem) => {
+                    hobby.push(elem.value);
+                });
+                const data = {
+                    username: form.username.value,
+                    gender: form.gender.value,
+                    year: form.year.value,
+                    month: form.month.value,
+                    day: form.day.value,
+                    hobby,
+                };
+                //axios
+                axios({
+                    method: 'GET',
+                    url: '/axios',
+                    params: data,
+                }).then((res) => {
+                    console.log('res', res);
+                    resultBox.textContent = `이름 : ${res.data.username}
+                        성별: ${res.data.gender}
+                        ${res.data.year}년
+                        ${res.data.month}월
+                        ${res.data.day}일 
+                        취미는 ${res.data.hobby}입니다`;
+                });
+            }
+        </script>
+    </body>
+</html>
