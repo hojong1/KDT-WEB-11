@@ -15,7 +15,6 @@ const upload = multer({
 app.get('/', (req, res) => {
     res.render('exam');
 });
-
 const uploadDetail = multer({
     storage: multer.diskStorage({
         destination(req, file, done) {
@@ -27,7 +26,6 @@ const uploadDetail = multer({
             done(null, newName);
         },
     }),
-
     limits: { fileSize: 1 * 1024 * 1024 },
 });
 
