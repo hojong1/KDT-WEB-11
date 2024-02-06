@@ -34,4 +34,4 @@ select * from user2 where gender = 'M' and birthday like '197%';
 select * from user2 order by age desc limit 3;
 select * from user2 where 25 <= age and age <= 50;
 update user2 set pw = '12345678' where id = 'hong1234';
-delete from user2 where id = 'jungkrat';  
+delete from user2 where id = 'jungkrat';
