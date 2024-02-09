@@ -1,7 +1,7 @@
 const ids = document.getElementById('kdt11id'); //id
 const classes = document.getElementsByClassName('kdt11class');
 
-console.log(ids);
+//console.log(ids);
 console.log(classes);
 
 const names = document.getElementsByName('kdt11name');
@@ -10,7 +10,7 @@ console.log(names);
 const tags = document.getElementsByTagName('body');
 console.log(tags);
 
-const queryIds = document.querySelector('#kdt11id');
+const queryIds = document.querySelector('.kdt11class');
 
 console.log(queryIds);
 

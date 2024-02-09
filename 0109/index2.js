@@ -2,10 +2,10 @@ const target = document.getElementById('target');
 console.log(target);
 
 // target 기준 모든 부모의 모든 자식 태그 선택
-const children = target.parentNode.children;
-console.log(children);
+// const children = target.parentNode.children;
+// console.log(children);
 
-// target 기준 부모의 []안에 자식 태그 선택
+// // target 기준 부모의 []안에 자식 태그 선택
 const first = target.parentNode.children[0];
 console.log(first);
 
