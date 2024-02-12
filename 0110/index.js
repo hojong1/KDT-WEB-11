@@ -4,9 +4,9 @@ const input = document.getElementById('input');
 
 btn.addEventListener('click', function (event) {
     // console.log('안녕하세요');
+    event.preventDefault();
     console.log(event);
     console.log(event.target);
-    event.preventDefault();
 });
 btn.addEventListener('mouseover', function () {
     console.log('mouseover');

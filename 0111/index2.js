@@ -1,5 +1,4 @@
-/*
-console.log(document);
+// console.log(document);
 
 console.log($(document));
 //파일이 열리면서 실행되는 이벤트 넣기
@@ -9,17 +8,17 @@ $(document).ready(function () {
 $(function () {
     console.log('안녕');
 });
-*/
 
 //click()
 $('.hello').click(function () {
     $('.hello').css('color', 'red');
 });
-// $('.nums').click(function () {
-//     // 전체 $('.nums').css('color', 'blue');
-//     //$(this)는 자기 자신 = 이벤트가 적용된 요소
-//     $(this).css('color', 'blue');
-// });
+$('.nums').click(function () {
+    // 전체
+    $('.nums').css('color', 'skyblue'); //전체
+    //$(this)는 자기 자신 = 이벤트가 적용된 요소
+    $(this).css('color', 'blue'); //클릭한 목록 1개
+});
 
 $('.nums').on('click', function () {
     $(this).css('color', 'red');
@@ -28,7 +27,7 @@ $('.nums').on('click', function () {
 //mouseover() : 마우스 올렸을 때
 $('.numbers').mouseover(function () {
     $('.numbers').css('background-color', 'green');
-    // $('.numbers').append('<li>mouseover() call</li>');
+    //$('.numbers').append('<li>mouseover() call</li>');
 });
 //hover() : 마우스 올렸을때와 떼었을때
 // $('.div-hover').hover(

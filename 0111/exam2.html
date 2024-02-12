@@ -34,15 +34,15 @@
             let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
             nowIndex = 0;
             function changeColor() {
-                let nowColor = colors[nowIndex];
+                let nowColor = colors[nowIndex]; // 처음 눌렀을때 : nowColor: colors[0]=.red         두번째 누를때 : nowcolor= colors[1]=orange
 
-                $('div').removeClass(nowColor);
+                $('div').removeClass(nowColor); // colors[0]=.red 삭제       colors[1]=orange 삭제
 
-                nowIndex = (nowIndex + 1) % colors.length;
+                nowIndex = (nowIndex + 1) % colors.length; // nowindex의 값 1 추가 (6부터 다시 0이되는 구조 )     nowindex=2로 변경
 
-                let nextColor = colors[nowIndex];
+                let nextColor = colors[nowIndex]; // nextcolor = colors[1]=orange    nextcolor= colors[2]= yellow
 
-                $('div').addClass(nextColor);
+                $('div').addClass(nextColor); // orange 적용      yellow 적용
             }
         </script>
     </head>

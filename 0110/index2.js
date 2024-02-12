@@ -1,8 +1,8 @@
 //jquery
 //$(선택자).동작함수();
-// console.log($('#hello').text());
-// $('#hello').text('안녕히가세요');
-// $('#hello').css('font-size', '20px');
+console.log($('#hello').text());
+$('#hello').text('안녕히가세요');
+$('#hello').css('font-size', '20px');
 
 //jquery 메소드
 //val()
@@ -18,10 +18,12 @@ function setValue() {
 //css()
 
 function changeCssJs() {
+    //js로 바꾸기
     let span = document.querySelector('span');
     span.style = 'font-size:20px; color : red;';
 }
 function changeCssJquery() {
+    //jquery로 바꾸기
     // $('span').css('font-size', '40px');
     // $('span').css('color', 'blue');
     $('span').css({ 'font-size': '40px', color: 'blue' });
@@ -33,20 +35,24 @@ function getCssJquery() {
 //attr()
 
 function changeAttrJs() {
+    //js로 바꾸기
     let a = document.querySelector('a');
     a.setAttribute('href', 'https://www.naver.com');
 }
 function changeAttrJquery() {
+    //jquery로 바꾸기
     $('a').attr('href', 'https://www.daum.net');
 }
 
 //html()
 
 function changeHtmlJs() {
+    //js로 바꾸기
     let p = document.querySelector('.html');
     p.innerHTML = '<p>javascript</p>';
 }
 function changeHtmlJquery() {
+    //jquery로 바꾸기
     $('.html').html('<p>jquery</p>');
 }
 
@@ -76,6 +82,16 @@ function prependJquery() {
 
 //before, after 복습 green이용해서
 
+function beforeJs() {
+    let li = document.createElement('li');
+    let target = document.querySelector('.green');
+    li.textContent = 'js로 green 앞에 추가';
+    target.before(li);
+}
+function beforeJquery() {
+    $('.green').before('<li>jquery로 green 앞에 추가</li>');
+}
+
 //요소 삭제하기
 
 function removeJs() {
@@ -101,7 +117,7 @@ function findParent() {
     console.log($('.child2').parent());
 }
 function findParents() {
-    console.log($('.child2').parents());
+    console.log($('.child2').parents()); // 기준의 조상태그 전부 탐색
 }
 function findNext() {
     console.log($('.child2').next());
