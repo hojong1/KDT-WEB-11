@@ -12,6 +12,8 @@ const indexRouter = require('./routes');
 app.use('/', indexRouter);
 const postRouter = require('./routes/post');
 app.use('/api/post', postRouter);
+const memberRouter = require('./routes/member');
+app.use('/api/member', memberRouter);
 
 //404
 app.get('*', (req, res) => {
