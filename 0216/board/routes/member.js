@@ -7,11 +7,15 @@ const router = express.Router();
 router.post('/signup', controller.signup);
 //POST /login 로그인
 router.post('/login', controller.login);
-//GET /:id 회원조회
-router.get('/:id', controller.find);
+//GET /info 회원조회
+router.get('/info', controller.find);
 //PATCH /update 정보수정
 router.patch('/update', controller.update);
 //DELETE /delete 회원탈퇴
 router.delete('/delete', controller.delete);
+//POST /logout 로그아웃 (세션삭제)
+router.get('/logout', controller.logout);
+//GET / getCookie 쿠키
+router.get('/getCookie', controller.getCookie);
 
 module.exports = router;

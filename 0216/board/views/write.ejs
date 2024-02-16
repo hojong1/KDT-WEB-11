@@ -25,10 +25,10 @@
                     },
                 });
                 console.log(res);
-                const { result, data } = res.data;
-                if (result) {
+                const { success, result } = res.data;
+                if (success) {
                     alert('등록되었습니다');
-                    document.location.href = `/post/${data}`;
+                    document.location.href = `/post/${result}`;
                 }
             }
         </script>
