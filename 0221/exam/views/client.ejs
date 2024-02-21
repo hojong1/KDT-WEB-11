@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        <ul></ul>
+        <form id="chat">
+            <button id="hello">hello</button>
+            <button id="study">study</button>
+            <button id="bye">bye</button><br /><br />
+            <div id="result"></div>
+        </form>
+
+        <script>
+            const socket = io();
+            const chatForm = document.querySelector('#chat');
+            const resultBox = document.querySelector('#result');
+            const hello = chatForm.querySelector('#hello');
+            const study = chatForm.querySelector('#study');
+            const bye = chatForm.querySelector('#bye');
+
+            hello.addEventListener('click', () => {
+                socket.emit('form_message', { message: '안녕하세요' });
+            });
+            study.addEventListener('click', () => {
+                socket.emit('form_message', { message: '공부합시다~' });
+            });
+            bye.addEventListener('click', () => {
+                socket.emit('form_message', { message: '잘가~' });
+            });
+            socket.on('backend_message', (data) => {
+                resultBox.innerHTML += '<div>' + data.message + '</div>';
+            });
+        </script>
+    </body>
+</html>
