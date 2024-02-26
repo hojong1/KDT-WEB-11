@@ -20,7 +20,7 @@
     }
 } */
 
-header {
+/* header {
     background-color: skyblue;
 }
 .logo {
@@ -43,7 +43,7 @@ nav div {
     }
     nav {
         display: flex;
-        /* justify-content: space-between; */
+        /* justify-content: space-between; 
         align-items: center;
         background-color: skyblue;
     }
@@ -51,5 +51,46 @@ nav div {
         position: relative;
         left: 80px;
     }
-}
+} */
 /* 강의 보고 추가로 적기 */
+
+header {
+    background: skyblue;
+}
+.logo {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    background-color: rgb(229, 229, 229);
+}
+
+nav div {
+    padding: 10px 0px;
+}
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: skyblue;
+    }
+    .logo {
+        position: relative;
+        left: 80px;
+        line-height: 100px;
+    }
+    nav div {
+        padding: 10px 10px;
+        font-weight: bold;
+    }
+}
