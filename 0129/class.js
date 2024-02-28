@@ -1,8 +1,7 @@
 //class
-
 class Cat {
     //생성자
-    //클래스의 인스터스 생성시 생성되는 것(선택)
+    //클래스의 인스턴스 생성시 생성되는 것(선택)
     constructor(name, age) {
         //속성
         this.name = name;
@@ -10,7 +9,7 @@ class Cat {
     }
     //메소드
     mew() {
-        console.log(this.name, '야옹');
+        console.log(this.name, '야옹'); // 사용할때 this를 써야함
     }
     eat() {
         console.log('먹이를 먹습니다');
@@ -23,7 +22,11 @@ cat1.mew();
 cat1.eat();
 cat2.mew();
 
-/* constructor 부분 없애고 new Cat()만 넣어도댐  */
+const cat3 = new Cat();
+console.log(cat3); //name, age 에 undefined 들어감
+cat3.mew();
+cat3.eat();
+
 //상속
 class House {
     door() {
@@ -44,7 +47,7 @@ class Apartment extends House {
 }
 
 const apart = new Apartment();
-apart.door();
+apart.door(); // 상속으로 인해 House 클래스의 함수 사용
 apart.elevator();
 
 //실습
