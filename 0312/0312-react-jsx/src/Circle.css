@@ -1,0 +1,75 @@
+.App-circleBox {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin-top: 20px;
+  left: 30px;
+  top: 20px;
+}
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.App-circle1 {
+  background-color: red;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.App-circle2 {
+  background-color: orange;
+  left: 70px;
+  top: 40px;
+  z-index: 2;
+}
+
+.App-circle3 {
+  background-color: yellow;
+  left: 100px;
+  top: 100px;
+  z-index: 3;
+}
+.App-circle4 {
+  background-color: green;
+  left: 160px;
+  top: 95px;
+  z-index: 4;
+}
+.App-circle5 {
+  background-color: blue;
+  left: 220px;
+  z-index: 50;
+  top: 90px;
+}
+.App-circle6 {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.App-circle7 {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.grass {
+  position: relative;
+  bottom: 350px;
+  z-index: 20;
+}
+.border-h2 {
+  border: 5px dotted green;
+  width: 400px;
+}
+.orange {
+  background-color: orange;
+  color: darkorange;
+}
+div {
+  text-align: center;
+}

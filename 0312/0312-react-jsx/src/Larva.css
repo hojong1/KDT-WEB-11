@@ -1,0 +1,9 @@
+.grass {
+  position: relative;
+  top: 260px;
+}
+.grass-bg {
+  width: 200px;
+  height: 200px;
+  background-image: url('./grass.png');
+}
