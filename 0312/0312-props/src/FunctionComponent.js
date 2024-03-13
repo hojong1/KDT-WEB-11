@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 export default function FunctionComponent({ name, time, children }) {
   //   const { name } = props; // 이걸 넣은 순간 props.name > name
 
@@ -9,14 +9,17 @@ export default function FunctionComponent({ name, time, children }) {
       <h1>Hi {name}</h1>
       {/* <h1>Hi {props.time}</h1> */}
       <h1>Hi {time}</h1>
-      <div>{children}</div>
+      {/* <div>{children}</div> */}
     </div>
   );
 }
 
 FunctionComponent.defaultProps = {
-  name: '홍길동',
+  // name: "홍길동",
 };
 FunctionComponent.propTypes = {
-  name: PropTypes.string,
+  // isRequired 는 default 없을 때 작동
+
+  name: PropTypes.string.isRequired,
+  time: PropTypes.number,
 };
