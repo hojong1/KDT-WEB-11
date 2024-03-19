@@ -2,6 +2,7 @@ import "./App.css";
 import LifeCycleClass from "./LifeCycleClass";
 import LifeCycleFunction from "./LifeCycleFunction";
 import Ex1 from "./Ex1";
+import PostList from "./PostList";
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
       <LifeCycleFunction /> */}
 
       <hr />
-      <Ex1 />
+      {/* <Ex1 /> */}
+
+      <PostList />
     </div>
   );
 }
