@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import FunctionComponent from "./FunctionComponent";
 import ClassComponent from "./ClassComponent";
@@ -17,8 +16,8 @@ function App() {
       {/* 함수형과 클래스형 컴포넌트 중복 사용 시 prop-types 하나만 뜨는 경우 발생 */}
 
       <hr />
-      {/* <ClassComponent name={name} />
-      <ClassComponent /> */}
+      <ClassComponent name={name} />
+      <ClassComponent />
 
       <hr />
       <Button link="https://www.google.com">
