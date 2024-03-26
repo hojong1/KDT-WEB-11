@@ -11,6 +11,7 @@ class Counter extends Component {
     const { number } = this.state;
     return (
       <div>
+        {/* this.state.number */}
         <h1>{number}</h1>
         <button
           onClick={() => {

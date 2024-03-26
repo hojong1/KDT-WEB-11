@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import FoodComponent from "./FoodComponent";
 import BookComponent from "./BookComponent";
@@ -7,6 +6,9 @@ import SayFunction from "./SayFunction";
 import OnClick from "./OnClick";
 import Exam1 from "./Exam1";
 import Exam2 from "./Exam2";
+import Practice1 from "./Practice1";
+import Practice2 from "./Practice2";
+import Practice3 from "./Practice3";
 
 function App() {
   // const food = "고기";
@@ -20,8 +22,8 @@ function App() {
   //   price: "13,500원",
   //   type: "개발서",
   // };
-  const vaild = "vaild";
-  const text = "text";
+  // const vaild = "vaild";
+  // const text = "text";
   return (
     <div className="App">
       {/* <FoodComponent food={food} />
@@ -32,17 +34,22 @@ function App() {
       <Book title="리액트" author="코딩온" price="13,500원" type="개발서" />
       <Book book={book} /> */}
 
-      <Counter />
+      {/* <Counter />
       <hr />
-      <SayFunction />
+      <SayFunction /> */}
 
       <hr />
-      <OnClick vaild={vaild} text={text} />
-      <OnClick />
+      {/* <OnClick vaild={vaild} text={text} />
+      <OnClick /> */}
 
       <hr />
-      <Exam1 />
-      <Exam2 />
+      {/* <Exam1 />
+      <Exam2 /> */}
+
+      <hr />
+      <Practice1 />
+      <Practice2 />
+      <Practice3 />
     </div>
   );
 }

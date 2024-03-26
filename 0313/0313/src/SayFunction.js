@@ -16,8 +16,8 @@ const SayFunction = () => {
     setMessage("안녕히가세요~");
   };
 
-  const alertMsg = (e, msg) => {
-    console.log(e.target);
+  const alertMsg = (msg) => {
+    // console.log(e.target);
     alert(`${msg} 입니다!`);
   };
   return (

@@ -9,7 +9,7 @@ export default function FunctionComponent({ name, time, children }) {
       <h1>Hi {name}</h1>
       {/* <h1>Hi {props.time}</h1> */}
       <h1>Hi {time}</h1>
-      {/* <div>{children}</div> */}
+      <div>{children}</div>
     </div>
   );
 }
@@ -19,7 +19,6 @@ FunctionComponent.defaultProps = {
 };
 FunctionComponent.propTypes = {
   // isRequired 는 default 없을 때 작동
-
   name: PropTypes.string.isRequired,
   time: PropTypes.number,
 };
