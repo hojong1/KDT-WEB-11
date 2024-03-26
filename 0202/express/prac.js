@@ -11,12 +11,12 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.render("prac1");
 });
-app.get("/prac2", (req, res) => {
-  res.render("prac2");
-});
 app.get("/axios", (req, res) => {
   console.log("요청값", req.query);
   res.send(req.query);
+});
+app.get("/prac2", (req, res) => {
+  res.render("prac2");
 });
 const id = "kdt11";
 const pw = "1234";
