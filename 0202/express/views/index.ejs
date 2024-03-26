@@ -72,7 +72,7 @@
         //axios
         axios({
           method: "GET",
-          url: "/axios", //코드보고수정
+          url: "/axios",
           params: data,
         }).then((res) => {
           console.log("res", res);
@@ -82,8 +82,8 @@
       //방법2
       async function axiosPost() {
         const data = {
-          username: document.querySelector("#name").value,
-          email: document.querySelector("#email").value,
+          username: document.querySelector("#name").value, // = form.name.value
+          email: document.querySelector("#email").value, // = form.email.value
         };
         try {
           const res = await axios({
@@ -132,9 +132,9 @@
         };
         fetch("/fetch", {
           method: "POST",
-          body: JSON.stringify(data),
+          body: JSON.stringify(data), // json 문자열로 변환
           headers: {
-            "Content-Type": "application/json",
+            "Content-Type": "application/json", // json 형식이라고 서버에 알리는듯 하다.
           },
         })
           .then((res) => {
