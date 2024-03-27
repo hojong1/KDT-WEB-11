@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 하나의 파일 받고 바로 뜨게 하기  -->
+    <form action="/uploads" method="post" enctype="multipart/form-data">
+      <input type="file" name="userfile" /><br />
+      <input type="text" name="title" /><br />
+      <button type="submit">업로드</button>
+    </form>
+    <% if (typeof uploadedFileUrl !== 'undefined') { %>
+    <img src="<%= uploadedFileUrl %>" alt="Uploaded File" />
+    <% } %>
+  </body>
+</html>
